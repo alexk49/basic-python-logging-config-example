@@ -22,3 +22,15 @@ logging.info("Logging message with variable: %s", example_variable)
 ```
 
 Updating the logging level as required.
+
+# Basic Config
+
+Alternatively, if you just need console logging this can be done with:
+
+```
+""" logging config """
+import logging
+logging.basicConfig(
+    level=logging.INFO, format=" %(asctime)s -  %(levelname)s -  %(message)s"
+)
+```
